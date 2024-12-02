@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    height: 60px;
+    width: 100%;
+    background-color: grey;
+    ul.parent{
+        justify-content: flex-end;
+        display: flex;
+        li{
+            list-style: none;
+            padding: 15px;
+            position: relative;
+            a{
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 10px;
+                font-size: 20px;
+
+                &:hover{
+                    color: red;
+                }
+            }
+
+            ul{
+                position: absolute;
+                display: none;
+                background-color: grey;
+                padding: 10px;
+                cursor: pointer;
+            }
+    
+            &:hover{
+                ul{
+                    display: block;
+                }
+            }
+        }
+    }
+
+}
+
+.head{
+    background-image: url(../images/Header.jpg);
+    width: 100%;
+    height: 150px;
+}
+
+.content{
+    padding: 10px;
+
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 20px;
+        li{
+            padding: 18px;
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            position: relative;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgb(94, 196, 214);
+                
+            }
+
+            img{
+                position: absolute;
+                width: 120px;
+                height: 110px;
+                bottom: 28px;
+                left: 46px;
+            }
+
+            .button{
+                position: absolute;
+                bottom: 0px;
+                width: 200px;
+                height: 25px;
+                color: #fff;
+                background-color: green;
+            }
+
+            .product-discription{
+                position: absolute;
+                left: 75px;
+            }
+            .disk{
+                position: absolute;
+                left: 40px;
+            }
+        }
+    }
+}
